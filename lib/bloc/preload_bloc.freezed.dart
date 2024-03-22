@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'preload_bloc.dart';
 
@@ -12,7 +12,7 @@ part of 'preload_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$PreloadEvent {
@@ -26,10 +26,10 @@ mixin _$PreloadEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getVideosFromApi,
-    TResult Function()? setLoading,
-    TResult Function(List<String> urls)? updateUrls,
-    TResult Function(int index)? onVideoIndexChanged,
+    TResult? Function()? getVideosFromApi,
+    TResult? Function()? setLoading,
+    TResult? Function(List<String> urls)? updateUrls,
+    TResult? Function(int index)? onVideoIndexChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -51,10 +51,10 @@ mixin _$PreloadEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetVideosFromApi value)? getVideosFromApi,
-    TResult Function(_SetLoading value)? setLoading,
-    TResult Function(_UpdateUrls value)? updateUrls,
-    TResult Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
+    TResult? Function(_GetVideosFromApi value)? getVideosFromApi,
+    TResult? Function(_SetLoading value)? setLoading,
+    TResult? Function(_UpdateUrls value)? updateUrls,
+    TResult? Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -72,41 +72,40 @@ mixin _$PreloadEvent {
 abstract class $PreloadEventCopyWith<$Res> {
   factory $PreloadEventCopyWith(
           PreloadEvent value, $Res Function(PreloadEvent) then) =
-      _$PreloadEventCopyWithImpl<$Res>;
+      _$PreloadEventCopyWithImpl<$Res, PreloadEvent>;
 }
 
 /// @nodoc
-class _$PreloadEventCopyWithImpl<$Res> implements $PreloadEventCopyWith<$Res> {
+class _$PreloadEventCopyWithImpl<$Res, $Val extends PreloadEvent>
+    implements $PreloadEventCopyWith<$Res> {
   _$PreloadEventCopyWithImpl(this._value, this._then);
 
-  final PreloadEvent _value;
   // ignore: unused_field
-  final $Res Function(PreloadEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$$_GetVideosFromApiCopyWith<$Res> {
-  factory _$$_GetVideosFromApiCopyWith(
-          _$_GetVideosFromApi value, $Res Function(_$_GetVideosFromApi) then) =
-      __$$_GetVideosFromApiCopyWithImpl<$Res>;
+abstract class _$$GetVideosFromApiImplCopyWith<$Res> {
+  factory _$$GetVideosFromApiImplCopyWith(_$GetVideosFromApiImpl value,
+          $Res Function(_$GetVideosFromApiImpl) then) =
+      __$$GetVideosFromApiImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetVideosFromApiCopyWithImpl<$Res>
-    extends _$PreloadEventCopyWithImpl<$Res>
-    implements _$$_GetVideosFromApiCopyWith<$Res> {
-  __$$_GetVideosFromApiCopyWithImpl(
-      _$_GetVideosFromApi _value, $Res Function(_$_GetVideosFromApi) _then)
-      : super(_value, (v) => _then(v as _$_GetVideosFromApi));
-
-  @override
-  _$_GetVideosFromApi get _value => super._value as _$_GetVideosFromApi;
+class __$$GetVideosFromApiImplCopyWithImpl<$Res>
+    extends _$PreloadEventCopyWithImpl<$Res, _$GetVideosFromApiImpl>
+    implements _$$GetVideosFromApiImplCopyWith<$Res> {
+  __$$GetVideosFromApiImplCopyWithImpl(_$GetVideosFromApiImpl _value,
+      $Res Function(_$GetVideosFromApiImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetVideosFromApi implements _GetVideosFromApi {
-  const _$_GetVideosFromApi();
+class _$GetVideosFromApiImpl implements _GetVideosFromApi {
+  const _$GetVideosFromApiImpl();
 
   @override
   String toString() {
@@ -114,9 +113,9 @@ class _$_GetVideosFromApi implements _GetVideosFromApi {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetVideosFromApi);
+        (other.runtimeType == runtimeType && other is _$GetVideosFromApiImpl);
   }
 
   @override
@@ -136,10 +135,10 @@ class _$_GetVideosFromApi implements _GetVideosFromApi {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getVideosFromApi,
-    TResult Function()? setLoading,
-    TResult Function(List<String> urls)? updateUrls,
-    TResult Function(int index)? onVideoIndexChanged,
+    TResult? Function()? getVideosFromApi,
+    TResult? Function()? setLoading,
+    TResult? Function(List<String> urls)? updateUrls,
+    TResult? Function(int index)? onVideoIndexChanged,
   }) {
     return getVideosFromApi?.call();
   }
@@ -173,10 +172,10 @@ class _$_GetVideosFromApi implements _GetVideosFromApi {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetVideosFromApi value)? getVideosFromApi,
-    TResult Function(_SetLoading value)? setLoading,
-    TResult Function(_UpdateUrls value)? updateUrls,
-    TResult Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
+    TResult? Function(_GetVideosFromApi value)? getVideosFromApi,
+    TResult? Function(_SetLoading value)? setLoading,
+    TResult? Function(_UpdateUrls value)? updateUrls,
+    TResult? Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
   }) {
     return getVideosFromApi?.call(this);
   }
@@ -198,31 +197,29 @@ class _$_GetVideosFromApi implements _GetVideosFromApi {
 }
 
 abstract class _GetVideosFromApi implements PreloadEvent {
-  const factory _GetVideosFromApi() = _$_GetVideosFromApi;
+  const factory _GetVideosFromApi() = _$GetVideosFromApiImpl;
 }
 
 /// @nodoc
-abstract class _$$_SetLoadingCopyWith<$Res> {
-  factory _$$_SetLoadingCopyWith(
-          _$_SetLoading value, $Res Function(_$_SetLoading) then) =
-      __$$_SetLoadingCopyWithImpl<$Res>;
+abstract class _$$SetLoadingImplCopyWith<$Res> {
+  factory _$$SetLoadingImplCopyWith(
+          _$SetLoadingImpl value, $Res Function(_$SetLoadingImpl) then) =
+      __$$SetLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SetLoadingCopyWithImpl<$Res> extends _$PreloadEventCopyWithImpl<$Res>
-    implements _$$_SetLoadingCopyWith<$Res> {
-  __$$_SetLoadingCopyWithImpl(
-      _$_SetLoading _value, $Res Function(_$_SetLoading) _then)
-      : super(_value, (v) => _then(v as _$_SetLoading));
-
-  @override
-  _$_SetLoading get _value => super._value as _$_SetLoading;
+class __$$SetLoadingImplCopyWithImpl<$Res>
+    extends _$PreloadEventCopyWithImpl<$Res, _$SetLoadingImpl>
+    implements _$$SetLoadingImplCopyWith<$Res> {
+  __$$SetLoadingImplCopyWithImpl(
+      _$SetLoadingImpl _value, $Res Function(_$SetLoadingImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SetLoading implements _SetLoading {
-  const _$_SetLoading();
+class _$SetLoadingImpl implements _SetLoading {
+  const _$SetLoadingImpl();
 
   @override
   String toString() {
@@ -230,9 +227,9 @@ class _$_SetLoading implements _SetLoading {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SetLoading);
+        (other.runtimeType == runtimeType && other is _$SetLoadingImpl);
   }
 
   @override
@@ -252,10 +249,10 @@ class _$_SetLoading implements _SetLoading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getVideosFromApi,
-    TResult Function()? setLoading,
-    TResult Function(List<String> urls)? updateUrls,
-    TResult Function(int index)? onVideoIndexChanged,
+    TResult? Function()? getVideosFromApi,
+    TResult? Function()? setLoading,
+    TResult? Function(List<String> urls)? updateUrls,
+    TResult? Function(int index)? onVideoIndexChanged,
   }) {
     return setLoading?.call();
   }
@@ -289,10 +286,10 @@ class _$_SetLoading implements _SetLoading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetVideosFromApi value)? getVideosFromApi,
-    TResult Function(_SetLoading value)? setLoading,
-    TResult Function(_UpdateUrls value)? updateUrls,
-    TResult Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
+    TResult? Function(_GetVideosFromApi value)? getVideosFromApi,
+    TResult? Function(_SetLoading value)? setLoading,
+    TResult? Function(_UpdateUrls value)? updateUrls,
+    TResult? Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
   }) {
     return setLoading?.call(this);
   }
@@ -314,33 +311,33 @@ class _$_SetLoading implements _SetLoading {
 }
 
 abstract class _SetLoading implements PreloadEvent {
-  const factory _SetLoading() = _$_SetLoading;
+  const factory _SetLoading() = _$SetLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_UpdateUrlsCopyWith<$Res> {
-  factory _$$_UpdateUrlsCopyWith(
-          _$_UpdateUrls value, $Res Function(_$_UpdateUrls) then) =
-      __$$_UpdateUrlsCopyWithImpl<$Res>;
+abstract class _$$UpdateUrlsImplCopyWith<$Res> {
+  factory _$$UpdateUrlsImplCopyWith(
+          _$UpdateUrlsImpl value, $Res Function(_$UpdateUrlsImpl) then) =
+      __$$UpdateUrlsImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<String> urls});
 }
 
 /// @nodoc
-class __$$_UpdateUrlsCopyWithImpl<$Res> extends _$PreloadEventCopyWithImpl<$Res>
-    implements _$$_UpdateUrlsCopyWith<$Res> {
-  __$$_UpdateUrlsCopyWithImpl(
-      _$_UpdateUrls _value, $Res Function(_$_UpdateUrls) _then)
-      : super(_value, (v) => _then(v as _$_UpdateUrls));
+class __$$UpdateUrlsImplCopyWithImpl<$Res>
+    extends _$PreloadEventCopyWithImpl<$Res, _$UpdateUrlsImpl>
+    implements _$$UpdateUrlsImplCopyWith<$Res> {
+  __$$UpdateUrlsImplCopyWithImpl(
+      _$UpdateUrlsImpl _value, $Res Function(_$UpdateUrlsImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_UpdateUrls get _value => super._value as _$_UpdateUrls;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? urls = freezed,
+    Object? urls = null,
   }) {
-    return _then(_$_UpdateUrls(
-      urls == freezed
+    return _then(_$UpdateUrlsImpl(
+      null == urls
           ? _value._urls
           : urls // ignore: cast_nullable_to_non_nullable
               as List<String>,
@@ -350,12 +347,13 @@ class __$$_UpdateUrlsCopyWithImpl<$Res> extends _$PreloadEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_UpdateUrls implements _UpdateUrls {
-  const _$_UpdateUrls(final List<String> urls) : _urls = urls;
+class _$UpdateUrlsImpl implements _UpdateUrls {
+  const _$UpdateUrlsImpl(final List<String> urls) : _urls = urls;
 
   final List<String> _urls;
   @override
   List<String> get urls {
+    if (_urls is EqualUnmodifiableListView) return _urls;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_urls);
   }
@@ -366,10 +364,10 @@ class _$_UpdateUrls implements _UpdateUrls {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UpdateUrls &&
+            other is _$UpdateUrlsImpl &&
             const DeepCollectionEquality().equals(other._urls, _urls));
   }
 
@@ -379,8 +377,9 @@ class _$_UpdateUrls implements _UpdateUrls {
 
   @JsonKey(ignore: true)
   @override
-  _$$_UpdateUrlsCopyWith<_$_UpdateUrls> get copyWith =>
-      __$$_UpdateUrlsCopyWithImpl<_$_UpdateUrls>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$UpdateUrlsImplCopyWith<_$UpdateUrlsImpl> get copyWith =>
+      __$$UpdateUrlsImplCopyWithImpl<_$UpdateUrlsImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -396,10 +395,10 @@ class _$_UpdateUrls implements _UpdateUrls {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getVideosFromApi,
-    TResult Function()? setLoading,
-    TResult Function(List<String> urls)? updateUrls,
-    TResult Function(int index)? onVideoIndexChanged,
+    TResult? Function()? getVideosFromApi,
+    TResult? Function()? setLoading,
+    TResult? Function(List<String> urls)? updateUrls,
+    TResult? Function(int index)? onVideoIndexChanged,
   }) {
     return updateUrls?.call(urls);
   }
@@ -433,10 +432,10 @@ class _$_UpdateUrls implements _UpdateUrls {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetVideosFromApi value)? getVideosFromApi,
-    TResult Function(_SetLoading value)? setLoading,
-    TResult Function(_UpdateUrls value)? updateUrls,
-    TResult Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
+    TResult? Function(_GetVideosFromApi value)? getVideosFromApi,
+    TResult? Function(_SetLoading value)? setLoading,
+    TResult? Function(_UpdateUrls value)? updateUrls,
+    TResult? Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
   }) {
     return updateUrls?.call(this);
   }
@@ -458,39 +457,38 @@ class _$_UpdateUrls implements _UpdateUrls {
 }
 
 abstract class _UpdateUrls implements PreloadEvent {
-  const factory _UpdateUrls(final List<String> urls) = _$_UpdateUrls;
+  const factory _UpdateUrls(final List<String> urls) = _$UpdateUrlsImpl;
 
-  List<String> get urls => throw _privateConstructorUsedError;
+  List<String> get urls;
   @JsonKey(ignore: true)
-  _$$_UpdateUrlsCopyWith<_$_UpdateUrls> get copyWith =>
+  _$$UpdateUrlsImplCopyWith<_$UpdateUrlsImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_OnVideoIndexChangedCopyWith<$Res> {
-  factory _$$_OnVideoIndexChangedCopyWith(_$_OnVideoIndexChanged value,
-          $Res Function(_$_OnVideoIndexChanged) then) =
-      __$$_OnVideoIndexChangedCopyWithImpl<$Res>;
+abstract class _$$OnVideoIndexChangedImplCopyWith<$Res> {
+  factory _$$OnVideoIndexChangedImplCopyWith(_$OnVideoIndexChangedImpl value,
+          $Res Function(_$OnVideoIndexChangedImpl) then) =
+      __$$OnVideoIndexChangedImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({int index});
 }
 
 /// @nodoc
-class __$$_OnVideoIndexChangedCopyWithImpl<$Res>
-    extends _$PreloadEventCopyWithImpl<$Res>
-    implements _$$_OnVideoIndexChangedCopyWith<$Res> {
-  __$$_OnVideoIndexChangedCopyWithImpl(_$_OnVideoIndexChanged _value,
-      $Res Function(_$_OnVideoIndexChanged) _then)
-      : super(_value, (v) => _then(v as _$_OnVideoIndexChanged));
+class __$$OnVideoIndexChangedImplCopyWithImpl<$Res>
+    extends _$PreloadEventCopyWithImpl<$Res, _$OnVideoIndexChangedImpl>
+    implements _$$OnVideoIndexChangedImplCopyWith<$Res> {
+  __$$OnVideoIndexChangedImplCopyWithImpl(_$OnVideoIndexChangedImpl _value,
+      $Res Function(_$OnVideoIndexChangedImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_OnVideoIndexChanged get _value => super._value as _$_OnVideoIndexChanged;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? index = freezed,
+    Object? index = null,
   }) {
-    return _then(_$_OnVideoIndexChanged(
-      index == freezed
+    return _then(_$OnVideoIndexChangedImpl(
+      null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
@@ -500,8 +498,8 @@ class __$$_OnVideoIndexChangedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_OnVideoIndexChanged implements _OnVideoIndexChanged {
-  const _$_OnVideoIndexChanged(this.index);
+class _$OnVideoIndexChangedImpl implements _OnVideoIndexChanged {
+  const _$OnVideoIndexChangedImpl(this.index);
 
   @override
   final int index;
@@ -512,21 +510,21 @@ class _$_OnVideoIndexChanged implements _OnVideoIndexChanged {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_OnVideoIndexChanged &&
-            const DeepCollectionEquality().equals(other.index, index));
+            other is _$OnVideoIndexChangedImpl &&
+            (identical(other.index, index) || other.index == index));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(index));
+  int get hashCode => Object.hash(runtimeType, index);
 
   @JsonKey(ignore: true)
   @override
-  _$$_OnVideoIndexChangedCopyWith<_$_OnVideoIndexChanged> get copyWith =>
-      __$$_OnVideoIndexChangedCopyWithImpl<_$_OnVideoIndexChanged>(
+  @pragma('vm:prefer-inline')
+  _$$OnVideoIndexChangedImplCopyWith<_$OnVideoIndexChangedImpl> get copyWith =>
+      __$$OnVideoIndexChangedImplCopyWithImpl<_$OnVideoIndexChangedImpl>(
           this, _$identity);
 
   @override
@@ -543,10 +541,10 @@ class _$_OnVideoIndexChanged implements _OnVideoIndexChanged {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? getVideosFromApi,
-    TResult Function()? setLoading,
-    TResult Function(List<String> urls)? updateUrls,
-    TResult Function(int index)? onVideoIndexChanged,
+    TResult? Function()? getVideosFromApi,
+    TResult? Function()? setLoading,
+    TResult? Function(List<String> urls)? updateUrls,
+    TResult? Function(int index)? onVideoIndexChanged,
   }) {
     return onVideoIndexChanged?.call(index);
   }
@@ -580,10 +578,10 @@ class _$_OnVideoIndexChanged implements _OnVideoIndexChanged {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_GetVideosFromApi value)? getVideosFromApi,
-    TResult Function(_SetLoading value)? setLoading,
-    TResult Function(_UpdateUrls value)? updateUrls,
-    TResult Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
+    TResult? Function(_GetVideosFromApi value)? getVideosFromApi,
+    TResult? Function(_SetLoading value)? setLoading,
+    TResult? Function(_UpdateUrls value)? updateUrls,
+    TResult? Function(_OnVideoIndexChanged value)? onVideoIndexChanged,
   }) {
     return onVideoIndexChanged?.call(this);
   }
@@ -605,11 +603,12 @@ class _$_OnVideoIndexChanged implements _OnVideoIndexChanged {
 }
 
 abstract class _OnVideoIndexChanged implements PreloadEvent {
-  const factory _OnVideoIndexChanged(final int index) = _$_OnVideoIndexChanged;
+  const factory _OnVideoIndexChanged(final int index) =
+      _$OnVideoIndexChangedImpl;
 
-  int get index => throw _privateConstructorUsedError;
+  int get index;
   @JsonKey(ignore: true)
-  _$$_OnVideoIndexChangedCopyWith<_$_OnVideoIndexChanged> get copyWith =>
+  _$$OnVideoIndexChangedImplCopyWith<_$OnVideoIndexChangedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -631,7 +630,8 @@ mixin _$PreloadState {
 abstract class $PreloadStateCopyWith<$Res> {
   factory $PreloadStateCopyWith(
           PreloadState value, $Res Function(PreloadState) then) =
-      _$PreloadStateCopyWithImpl<$Res>;
+      _$PreloadStateCopyWithImpl<$Res, PreloadState>;
+  @useResult
   $Res call(
       {List<String> urls,
       Map<int, VideoPlayerController> controllers,
@@ -641,53 +641,57 @@ abstract class $PreloadStateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PreloadStateCopyWithImpl<$Res> implements $PreloadStateCopyWith<$Res> {
+class _$PreloadStateCopyWithImpl<$Res, $Val extends PreloadState>
+    implements $PreloadStateCopyWith<$Res> {
   _$PreloadStateCopyWithImpl(this._value, this._then);
 
-  final PreloadState _value;
   // ignore: unused_field
-  final $Res Function(PreloadState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? urls = freezed,
-    Object? controllers = freezed,
-    Object? focusedIndex = freezed,
-    Object? reloadCounter = freezed,
-    Object? isLoading = freezed,
+    Object? urls = null,
+    Object? controllers = null,
+    Object? focusedIndex = null,
+    Object? reloadCounter = null,
+    Object? isLoading = null,
   }) {
     return _then(_value.copyWith(
-      urls: urls == freezed
+      urls: null == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      controllers: controllers == freezed
+      controllers: null == controllers
           ? _value.controllers
           : controllers // ignore: cast_nullable_to_non_nullable
               as Map<int, VideoPlayerController>,
-      focusedIndex: focusedIndex == freezed
+      focusedIndex: null == focusedIndex
           ? _value.focusedIndex
           : focusedIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      reloadCounter: reloadCounter == freezed
+      reloadCounter: null == reloadCounter
           ? _value.reloadCounter
           : reloadCounter // ignore: cast_nullable_to_non_nullable
               as int,
-      isLoading: isLoading == freezed
+      isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$_PreloadStateCopyWith<$Res>
+abstract class _$$PreloadStateImplCopyWith<$Res>
     implements $PreloadStateCopyWith<$Res> {
-  factory _$$_PreloadStateCopyWith(
-          _$_PreloadState value, $Res Function(_$_PreloadState) then) =
-      __$$_PreloadStateCopyWithImpl<$Res>;
+  factory _$$PreloadStateImplCopyWith(
+          _$PreloadStateImpl value, $Res Function(_$PreloadStateImpl) then) =
+      __$$PreloadStateImplCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {List<String> urls,
       Map<int, VideoPlayerController> controllers,
@@ -697,42 +701,40 @@ abstract class _$$_PreloadStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PreloadStateCopyWithImpl<$Res>
-    extends _$PreloadStateCopyWithImpl<$Res>
-    implements _$$_PreloadStateCopyWith<$Res> {
-  __$$_PreloadStateCopyWithImpl(
-      _$_PreloadState _value, $Res Function(_$_PreloadState) _then)
-      : super(_value, (v) => _then(v as _$_PreloadState));
+class __$$PreloadStateImplCopyWithImpl<$Res>
+    extends _$PreloadStateCopyWithImpl<$Res, _$PreloadStateImpl>
+    implements _$$PreloadStateImplCopyWith<$Res> {
+  __$$PreloadStateImplCopyWithImpl(
+      _$PreloadStateImpl _value, $Res Function(_$PreloadStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _$_PreloadState get _value => super._value as _$_PreloadState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? urls = freezed,
-    Object? controllers = freezed,
-    Object? focusedIndex = freezed,
-    Object? reloadCounter = freezed,
-    Object? isLoading = freezed,
+    Object? urls = null,
+    Object? controllers = null,
+    Object? focusedIndex = null,
+    Object? reloadCounter = null,
+    Object? isLoading = null,
   }) {
-    return _then(_$_PreloadState(
-      urls: urls == freezed
+    return _then(_$PreloadStateImpl(
+      urls: null == urls
           ? _value.urls
           : urls // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      controllers: controllers == freezed
+      controllers: null == controllers
           ? _value.controllers
           : controllers // ignore: cast_nullable_to_non_nullable
               as Map<int, VideoPlayerController>,
-      focusedIndex: focusedIndex == freezed
+      focusedIndex: null == focusedIndex
           ? _value.focusedIndex
           : focusedIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      reloadCounter: reloadCounter == freezed
+      reloadCounter: null == reloadCounter
           ? _value.reloadCounter
           : reloadCounter // ignore: cast_nullable_to_non_nullable
               as int,
-      isLoading: isLoading == freezed
+      isLoading: null == isLoading
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -742,8 +744,8 @@ class __$$_PreloadStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PreloadState implements _PreloadState {
-  _$_PreloadState(
+class _$PreloadStateImpl implements _PreloadState {
+  _$PreloadStateImpl(
       {required this.urls,
       required this.controllers,
       required this.focusedIndex,
@@ -767,18 +769,19 @@ class _$_PreloadState implements _PreloadState {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PreloadState &&
+            other is _$PreloadStateImpl &&
             const DeepCollectionEquality().equals(other.urls, urls) &&
             const DeepCollectionEquality()
                 .equals(other.controllers, controllers) &&
-            const DeepCollectionEquality()
-                .equals(other.focusedIndex, focusedIndex) &&
-            const DeepCollectionEquality()
-                .equals(other.reloadCounter, reloadCounter) &&
-            const DeepCollectionEquality().equals(other.isLoading, isLoading));
+            (identical(other.focusedIndex, focusedIndex) ||
+                other.focusedIndex == focusedIndex) &&
+            (identical(other.reloadCounter, reloadCounter) ||
+                other.reloadCounter == reloadCounter) &&
+            (identical(other.isLoading, isLoading) ||
+                other.isLoading == isLoading));
   }
 
   @override
@@ -786,14 +789,15 @@ class _$_PreloadState implements _PreloadState {
       runtimeType,
       const DeepCollectionEquality().hash(urls),
       const DeepCollectionEquality().hash(controllers),
-      const DeepCollectionEquality().hash(focusedIndex),
-      const DeepCollectionEquality().hash(reloadCounter),
-      const DeepCollectionEquality().hash(isLoading));
+      focusedIndex,
+      reloadCounter,
+      isLoading);
 
   @JsonKey(ignore: true)
   @override
-  _$$_PreloadStateCopyWith<_$_PreloadState> get copyWith =>
-      __$$_PreloadStateCopyWithImpl<_$_PreloadState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$PreloadStateImplCopyWith<_$PreloadStateImpl> get copyWith =>
+      __$$PreloadStateImplCopyWithImpl<_$PreloadStateImpl>(this, _$identity);
 }
 
 abstract class _PreloadState implements PreloadState {
@@ -802,21 +806,20 @@ abstract class _PreloadState implements PreloadState {
       required final Map<int, VideoPlayerController> controllers,
       required final int focusedIndex,
       required final int reloadCounter,
-      required final bool isLoading}) = _$_PreloadState;
+      required final bool isLoading}) = _$PreloadStateImpl;
 
   @override
-  List<String> get urls => throw _privateConstructorUsedError;
+  List<String> get urls;
   @override
-  Map<int, VideoPlayerController> get controllers =>
-      throw _privateConstructorUsedError;
+  Map<int, VideoPlayerController> get controllers;
   @override
-  int get focusedIndex => throw _privateConstructorUsedError;
+  int get focusedIndex;
   @override
-  int get reloadCounter => throw _privateConstructorUsedError;
+  int get reloadCounter;
   @override
-  bool get isLoading => throw _privateConstructorUsedError;
+  bool get isLoading;
   @override
   @JsonKey(ignore: true)
-  _$$_PreloadStateCopyWith<_$_PreloadState> get copyWith =>
+  _$$PreloadStateImplCopyWith<_$PreloadStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

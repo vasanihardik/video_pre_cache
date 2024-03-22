@@ -2,9 +2,10 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_preload_videos/service/api_service.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_preload_videos/core/constants.dart';
 import 'package:flutter_preload_videos/main.dart';
+import 'package:flutter_preload_videos/service/api_service.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:video_player/video_player.dart';
@@ -47,8 +48,14 @@ class PreloadBloc extends Bloc<PreloadEvent, PreloadState> {
         final bool shouldFetch = (e.index + kPreloadLimit) % kNextLimit == 0 &&
             state.urls.length == e.index + kPreloadLimit;
 
+        log('NEW VIDEOS ADDED $shouldFetch ${e.index} $kPreloadLimit  $kNextLimit ${state.urls.length}');
+
         if (shouldFetch) {
+          // final List<String> _urls = await ApiService.getVideos(id: e.index + kPreloadLimit);
           createIsolate(e.index);
+          // Update new urls
+          /*BlocProvider.of<PreloadBloc>(context, listen: false)
+              .add(PreloadEvent.updateUrls(_urls));*/
         }
 
         /// Next / Prev video decider
@@ -69,7 +76,7 @@ class PreloadBloc extends Bloc<PreloadEvent, PreloadState> {
 
         emit(state.copyWith(
             reloadCounter: state.reloadCounter + 1, isLoading: false));
-        log('🚀🚀🚀 NEW VIDEOS ADDED');
+        log('NEW VIDEOS ADDED');
       },
     );
   }
@@ -114,7 +121,7 @@ class PreloadBloc extends Bloc<PreloadEvent, PreloadState> {
       /// Initialize
       await _controller.initialize();
 
-      log('🚀🚀🚀 INITIALIZED $index');
+      log('INITIALIZED $index');
     }
   }
 
@@ -126,7 +133,7 @@ class PreloadBloc extends Bloc<PreloadEvent, PreloadState> {
       /// Play controller
       _controller.play();
 
-      log('🚀🚀🚀 PLAYING $index');
+      log('PLAYING $index');
     }
   }
 
@@ -141,7 +148,7 @@ class PreloadBloc extends Bloc<PreloadEvent, PreloadState> {
       /// Reset postiton to beginning
       _controller.seekTo(const Duration());
 
-      log('🚀🚀🚀 STOPPED $index');
+      log('STOPPED $index');
     }
   }
 
@@ -157,7 +164,7 @@ class PreloadBloc extends Bloc<PreloadEvent, PreloadState> {
         state.controllers.remove(_controller);
       }
 
-      log('🚀🚀🚀 DISPOSED $index');
+      log('DISPOSED $index');
     }
   }
 }

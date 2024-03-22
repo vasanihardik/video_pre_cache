@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_preload_videos/core/constants.dart';
 import 'package:flutter_preload_videos/service/navigation_service.dart';
-import 'package:flutter_preload_videos/video_page.dart';
+import 'package:flutter_preload_videos/video_player.dart';
 import 'package:injectable/injectable.dart';
 
 import 'service/api_service.dart';
@@ -20,7 +20,7 @@ void main() async {
 
 /// Isolate to fetch videos in the background so that the video experience is not disturbed.
 /// Without isolate, the video will be paused whenever there is an API call
-/// because the main thread will be busy fetching new video URLs. 
+/// because the main thread will be busy fetching new video URLs.
 ///
 /// https://blog.codemagic.io/understanding-flutter-isolates/
 Future createIsolate(int index) async {
@@ -65,18 +65,14 @@ void getVideosTask(SendPort mySendPort) async {
   }
 }
 
-class MyApp extends StatelessWidget {
-  final NavigationService _navigationService = getIt<NavigationService>();
+final NavigationService navigationService = getIt<NavigationService>();
 
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (_) => getIt<PreloadBloc>()..add(PreloadEvent.getVideosFromApi()),
-      child: MaterialApp(
-        key: _navigationService.navigationKey,
-        debugShowCheckedModeBanner: false,
-        home: VideoPage(),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: VideoPlayer(),
     );
   }
 }
